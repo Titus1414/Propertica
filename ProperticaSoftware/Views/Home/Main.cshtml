@@ -1,0 +1,34 @@
+﻿@model IEnumerable<ProperticaSoftware.Models.EmpAtt>
+
+@{
+    ViewBag.Title = "Index";
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    //var CurrentName = "";
+}
+
+
+@{
+    DateTime utcTime = DateTime.UtcNow;
+    TimeZoneInfo myZone = TimeZoneInfo.FindSystemTimeZoneById("Pakistan Standard Time");
+    DateTime custDateTime = TimeZoneInfo.ConvertTimeFromUtc(utcTime, myZone);
+    int days = DateTime.DaysInMonth(Convert.ToInt32(custDateTime.ToString("yyyy")), (Convert.ToInt32(custDateTime.ToString("MM"))));
+    var mnth = Convert.ToInt32(custDateTime.ToString("MM"));
+    int NewMonth = ViewBag.MonthCh != null ? ViewBag.MonthCh : 0;
+    if (NewMonth > 0)
+    {
+        if (ViewBag.MonthCh != mnth)
+    {
+        days = DateTime.DaysInMonth(Convert.ToInt32(custDateTime.ToString("yyyy")),NewMonth);
+    }
+    }
+
+}
+
+
+<div class="container-fluid" id="AttndRcd">
+
+
+    @{Html.RenderPartial("_AttndRecord");}
+
+</div>

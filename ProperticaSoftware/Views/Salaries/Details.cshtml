@@ -1,0 +1,276 @@
+﻿@model ProperticaSoftware.Models.Salary
+
+@{
+    ViewBag.Title = "Details";
+}
+
+    <div>
+        <div class="container">
+            <button class="mb-2 mr-2 btn-icon btn-pill btn btn-warning" style="float: right; margin-top: 40px;" data-toggle="modal" data-target="#PModal"><i class="fa fa-plus btn-icon-wrapper" style="font-size:13px;color:white;"> </i>Add Salary</button>
+            <h1 style="color:#ffbb33">Staff Salaries</h1>
+            <h5>@DateTime.Now.ToString("MMMM-yyyy") </h5>
+        </div>
+
+
+        @*Table Starts Here*@
+
+        <div class="main-card mb-3 card">
+            <div class="card-body">
+                <table data-toggle="table">
+                    <thead>
+                        <tr>
+                            <th data-sortable="true">
+                                Name
+                            </th>
+                            <th data-sortable="true">
+                                Designation
+                            </th>
+                            <th data-sortable="true">
+                                Department
+                            </th>
+                            <th data-sortable="true">
+                                Paid By
+                            </th>
+                            <th data-sortable="true">
+                                Pay Date
+                            </th>
+
+                            <th data-field="description"
+                                data-sortable="true">
+                                Description
+                            </th>
+
+                            <th data-sortable="true">
+                                Status
+                            </th>
+
+                            <th data-sortable="true">
+                                Ammount
+                            </th>
+
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @for (int i = 0; i <= 10; i++)
+                        {
+                            <tr>
+                                <td>Name</td>
+                                <td>Designation</td>
+                                <td>Department</td>
+                                <td>Paid By</td>
+                                <td>2019-11-2</td>
+                                <td>This is some description about the saly paid to the employ</td>
+                                <td>Status</td>
+                                <td>10</td>
+
+
+                            </tr>
+                        }
+
+                        <tr>
+                            <td style="font-size:large">Total</td>
+                            <td>---</td>
+                            <td>---</td>
+                            <td>---</td>
+                            <td>---</td>
+                            <td>---</td>
+                            <td>---</td>
+                            <td>Total Ammount</td>
+
+                        </tr>
+                    </tbody>
+                    @*Table Ends Here*@
+
+
+                </table>
+                <h4>Entries: 12</h4>
+            </div>
+        </div>
+
+
+        @*Modal For Purchase*@
+
+        <div class="modal fade" id="PModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" style=" margin-top: 75px;">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Salary Information</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="col-form-label">Name <span class="text-danger">*</span></label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="col-form-label">Designation<span class="text-danger">*</span></label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="col-form-label">Department<span class="text-danger">*</span></label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="col-form-label">Pay Date</label>
+                                        <input type="text" class="form-control" data-toggle="datepicker">
+                                    </div>
+                                </div>
+
+
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="col-form-label">Description<span class="text-danger">*</span></label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="col-form-label">Paid By</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="col-form-label">Ammount</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="sel1" class="col-form-label">Status</label>
+                                        <select class="form-control" id="sel1">
+                                            <option disabled selected>Select Option</option>
+                                            <option>Paid</option>
+                                            <option>Pending</option>
+
+                                        </select>
+
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                        </form>
+
+                        
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*Scap folder Code Below*@
+@*<div>
+    <h4>Salary</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PaidBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PaidBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PayDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PayDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Amount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsActive)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Employe.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Employe.Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>*@

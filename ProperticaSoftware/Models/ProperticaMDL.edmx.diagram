@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="121c861e53f44e989bfaa4bfda303125" Name="Diagram1">
+        <EntityTypeShape EntityType="SoftDBModel.Account" Width="1.5" PointX="9.75" PointY="2.375" />
+        <EntityTypeShape EntityType="SoftDBModel.Attendence" Width="1.5" PointX="5.25" PointY="6.375" />
+        <EntityTypeShape EntityType="SoftDBModel.AttendenceRecord" Width="1.5" PointX="7.5" PointY="6.75" />
+        <EntityTypeShape EntityType="SoftDBModel.Department" Width="1.5" PointX="0.75" PointY="4.875" />
+        <EntityTypeShape EntityType="SoftDBModel.Designation" Width="1.5" PointX="3" PointY="9.625" />
+        <EntityTypeShape EntityType="SoftDBModel.Employe" Width="1.5" PointX="9.75" PointY="5.375" />
+        <EntityTypeShape EntityType="SoftDBModel.Purchase" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SoftDBModel.Recipt" Width="1.5" PointX="12" PointY="7.125" />
+        <EntityTypeShape EntityType="SoftDBModel.Salary" Width="1.5" PointX="12" PointY="10.5" />
+        <EntityTypeShape EntityType="SoftDBModel.Status" Width="1.5" PointX="5.25" PointY="3.125" />
+        <EntityTypeShape EntityType="SoftDBModel.sysdiagram" Width="1.5" PointX="11.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SoftDBModel.User" Width="1.5" PointX="7.5" PointY="3.375" />
+        <EntityTypeShape EntityType="SoftDBModel.User1" Width="1.5" PointX="5.75" PointY="11.75" />
+        <AssociationConnector Association="SoftDBModel.FK_Recipt_Account" />
+        <AssociationConnector Association="SoftDBModel.FK_Attendence_AttendenceRecord" />
+        <AssociationConnector Association="SoftDBModel.FK_Attendence_Department" />
+        <AssociationConnector Association="SoftDBModel.FK_Attendence_Designation" />
+        <AssociationConnector Association="SoftDBModel.FK_Attendence_Employes" />
+        <AssociationConnector Association="SoftDBModel.FK_Attendence_Status" />
+        <AssociationConnector Association="SoftDBModel.FK_AttendenceRecord_Attendence" />
+        <AssociationConnector Association="SoftDBModel.FK_Employes_Attendence" />
+        <AssociationConnector Association="SoftDBModel.FK_AttendenceRecord_Employes" />
+        <AssociationConnector Association="SoftDBModel.FK_AttendenceRecord_Status" />
+        <AssociationConnector Association="SoftDBModel.FK_Employes_AttendenceRecord" />
+        <AssociationConnector Association="SoftDBModel.FK_Designation_Department" />
+        <AssociationConnector Association="SoftDBModel.FK_Employes_Department1" />
+        <AssociationConnector Association="SoftDBModel.FK_Employes_Designation" />
+        <AssociationConnector Association="SoftDBModel.FK_Employes_User" />
+        <AssociationConnector Association="SoftDBModel.FK_Recipt_Employes" />
+        <AssociationConnector Association="SoftDBModel.FK_Salary_Employes" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

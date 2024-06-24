@@ -1,0 +1,555 @@
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\ProperticaSoftware.dll.config
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\ProperticaSoftware.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\ProperticaSoftware.pdb
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csc.exe
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csc.exe.config
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csc.rsp
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csi.exe
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csi.exe.config
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csi.rsp
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.AppContext.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Collections.Immutable.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Console.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.Compression.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.FileSystem.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.Pipes.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Reflection.Metadata.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.AccessControl.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Claims.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.ValueTuple.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Xml.XPath.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\vbc.exe
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\vbc.exe.config
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\vbc.rsp
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\VBCSCompiler.exe
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\VBCSCompiler.exe.config
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Antlr3.Runtime.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Microsoft.Web.Infrastructure.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Newtonsoft.Json.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Helpers.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Mvc.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Optimization.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Razor.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.Deployment.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.Razor.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\WebGrease.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Helpers.xml
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Mvc.xml
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Optimization.xml
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Razor.xml
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.xml
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.Deployment.xml
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.Razor.xml
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Newtonsoft.Json.xml
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Antlr3.Runtime.pdb
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.csprojAssemblyReference.cache
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.csproj.CoreCompileInputs.cache
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.csproj.CopyComplete
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.dll
+E:\Projects\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.pdb
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\ProperticaSoftware.dll.config
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\ProperticaSoftware.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\ProperticaSoftware.pdb
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csc.exe
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csc.exe.config
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csc.rsp
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csi.exe
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csi.exe.config
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csi.rsp
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.AppContext.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Collections.Immutable.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Console.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.Compression.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.FileSystem.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.Pipes.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Reflection.Metadata.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.AccessControl.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Claims.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.ValueTuple.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Xml.XPath.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\vbc.exe
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\vbc.exe.config
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\vbc.rsp
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\VBCSCompiler.exe
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\VBCSCompiler.exe.config
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Antlr3.Runtime.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Microsoft.Web.Infrastructure.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Newtonsoft.Json.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Helpers.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Mvc.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Optimization.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Razor.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.Deployment.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.Razor.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\WebGrease.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Helpers.xml
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Mvc.xml
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Optimization.xml
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Razor.xml
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.xml
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.Deployment.xml
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.Razor.xml
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Newtonsoft.Json.xml
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Antlr3.Runtime.pdb
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.csprojAssemblyReference.cache
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.csproj.CoreCompileInputs.cache
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.csproj.CopyComplete
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.dll
+E:\Projects\SVN SHayan Pakistan\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.pdb
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\ProperticaSoftware.dll.config
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\ProperticaSoftware.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\ProperticaSoftware.pdb
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csc.exe
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csc.exe.config
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csc.rsp
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csi.exe
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csi.exe.config
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csi.rsp
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.AppContext.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Collections.Immutable.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Console.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.Compression.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.FileSystem.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.Pipes.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Reflection.Metadata.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.AccessControl.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Claims.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.ValueTuple.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Xml.XPath.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\vbc.exe
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\vbc.exe.config
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\vbc.rsp
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\VBCSCompiler.exe
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\VBCSCompiler.exe.config
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Antlr3.Runtime.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\EntityFramework.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\EntityFramework.SqlServer.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Microsoft.Web.Infrastructure.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Newtonsoft.Json.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Linq.Dynamic.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Helpers.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Mvc.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Optimization.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Razor.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.Deployment.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.Razor.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\WebGrease.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\EntityFramework.xml
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\EntityFramework.SqlServer.xml
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Helpers.xml
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Mvc.xml
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Optimization.xml
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Razor.xml
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.xml
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.Deployment.xml
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.Razor.xml
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Newtonsoft.Json.xml
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Antlr3.Runtime.pdb
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.csproj.CoreCompileInputs.cache
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.csproj.CopyComplete
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.dll
+D:\Mujtaba\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.pdb
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\ProperticaSoftware.dll.config
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\ProperticaSoftware.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\ProperticaSoftware.pdb
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csc.exe
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csc.exe.config
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csc.rsp
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csi.exe
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csi.exe.config
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csi.rsp
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.AppContext.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Collections.Immutable.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Console.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.Compression.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.FileSystem.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.Pipes.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Reflection.Metadata.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.AccessControl.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Claims.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.ValueTuple.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Xml.XPath.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\vbc.exe
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\vbc.exe.config
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\vbc.rsp
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\VBCSCompiler.exe
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\VBCSCompiler.exe.config
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Antlr3.Runtime.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\EntityFramework.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\EntityFramework.SqlServer.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Microsoft.Web.Infrastructure.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Newtonsoft.Json.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Linq.Dynamic.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Helpers.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Mvc.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Optimization.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Razor.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.Deployment.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.Razor.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\WebGrease.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\EntityFramework.xml
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\EntityFramework.SqlServer.xml
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Helpers.xml
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Mvc.xml
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Optimization.xml
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Razor.xml
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.xml
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.Deployment.xml
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.Razor.xml
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Newtonsoft.Json.xml
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Antlr3.Runtime.pdb
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.csprojAssemblyReference.cache
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.csproj.CoreCompileInputs.cache
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.csproj.CopyComplete
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.dll
+D:\Titus\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.pdb
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\ProperticaSoftware.dll.config
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\ProperticaSoftware.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\ProperticaSoftware.pdb
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csc.exe
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csc.exe.config
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csc.rsp
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csi.exe
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csi.exe.config
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csi.rsp
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.Managed.Core.targets
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.AppContext.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Collections.Immutable.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Console.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.Compression.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.FileSystem.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.Pipes.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Reflection.Metadata.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.AccessControl.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Claims.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Principal.Windows.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.ValueTuple.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Xml.XmlDocument.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Xml.XPath.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\vbc.exe
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\vbc.exe.config
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\vbc.rsp
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\VBCSCompiler.exe
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\roslyn\VBCSCompiler.exe.config
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Antlr3.Runtime.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\EntityFramework.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\EntityFramework.SqlServer.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Microsoft.Web.Infrastructure.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Newtonsoft.Json.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Linq.Dynamic.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Helpers.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Mvc.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Optimization.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Razor.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.Deployment.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.Razor.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\WebGrease.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\EntityFramework.xml
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\EntityFramework.SqlServer.xml
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Helpers.xml
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Mvc.xml
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Optimization.xml
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Razor.xml
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.xml
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.Deployment.xml
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.Razor.xml
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Newtonsoft.Json.xml
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Antlr3.Runtime.pdb
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.csprojAssemblyReference.cache
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.csproj.CoreCompileInputs.cache
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.csproj.CopyComplete
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.dll
+E:\ProperticaSoft\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.pdb
+D:\ProperticaSoftware\ProperticaSoftware\bin\ProperticaSoftware.dll.config
+D:\ProperticaSoftware\ProperticaSoftware\bin\ProperticaSoftware.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\ProperticaSoftware.pdb
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csc.exe
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csc.exe.config
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csc.rsp
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csi.exe
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csi.exe.config
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csi.rsp
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.Managed.Core.targets
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.AppContext.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Collections.Immutable.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Console.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.Compression.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.FileSystem.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.Pipes.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Reflection.Metadata.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.AccessControl.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Claims.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Principal.Windows.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.ValueTuple.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Xml.XmlDocument.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Xml.XPath.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\vbc.exe
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\vbc.exe.config
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\vbc.rsp
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\VBCSCompiler.exe
+D:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\VBCSCompiler.exe.config
+D:\ProperticaSoftware\ProperticaSoftware\bin\Antlr3.Runtime.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\EntityFramework.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\EntityFramework.SqlServer.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\Microsoft.Web.Infrastructure.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\Newtonsoft.Json.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\System.Linq.Dynamic.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Helpers.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Mvc.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Optimization.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Razor.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.Deployment.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.Razor.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\WebGrease.dll
+D:\ProperticaSoftware\ProperticaSoftware\bin\EntityFramework.xml
+D:\ProperticaSoftware\ProperticaSoftware\bin\EntityFramework.SqlServer.xml
+D:\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Helpers.xml
+D:\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Mvc.xml
+D:\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Optimization.xml
+D:\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Razor.xml
+D:\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.xml
+D:\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.Deployment.xml
+D:\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.Razor.xml
+D:\ProperticaSoftware\ProperticaSoftware\bin\Newtonsoft.Json.xml
+D:\ProperticaSoftware\ProperticaSoftware\bin\Antlr3.Runtime.pdb
+D:\ProperticaSoftware\ProperticaSoftware\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.csprojAssemblyReference.cache
+D:\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.csproj.CoreCompileInputs.cache
+D:\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.csproj.CopyComplete
+D:\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.dll
+D:\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.pdb
+E:\ProperticaSoftware\ProperticaSoftware\bin\ProperticaSoftware.dll.config
+E:\ProperticaSoftware\ProperticaSoftware\bin\ProperticaSoftware.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\ProperticaSoftware.pdb
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csc.exe
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csc.exe.config
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csc.rsp
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csi.exe
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csi.exe.config
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\csi.rsp
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.Managed.Core.targets
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.AppContext.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Collections.Immutable.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Console.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.Compression.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.FileSystem.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.IO.Pipes.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Reflection.Metadata.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.AccessControl.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Claims.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Security.Principal.Windows.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.ValueTuple.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Xml.XmlDocument.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Xml.XPath.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\vbc.exe
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\vbc.exe.config
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\vbc.rsp
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\VBCSCompiler.exe
+E:\ProperticaSoftware\ProperticaSoftware\bin\roslyn\VBCSCompiler.exe.config
+E:\ProperticaSoftware\ProperticaSoftware\bin\Antlr3.Runtime.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\EntityFramework.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\EntityFramework.SqlServer.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\Microsoft.Web.Infrastructure.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\Newtonsoft.Json.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\System.Linq.Dynamic.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Helpers.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Mvc.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Optimization.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Razor.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.Deployment.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.Razor.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\WebGrease.dll
+E:\ProperticaSoftware\ProperticaSoftware\bin\EntityFramework.xml
+E:\ProperticaSoftware\ProperticaSoftware\bin\EntityFramework.SqlServer.xml
+E:\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Helpers.xml
+E:\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Mvc.xml
+E:\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Optimization.xml
+E:\ProperticaSoftware\ProperticaSoftware\bin\System.Web.Razor.xml
+E:\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.xml
+E:\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.Deployment.xml
+E:\ProperticaSoftware\ProperticaSoftware\bin\System.Web.WebPages.Razor.xml
+E:\ProperticaSoftware\ProperticaSoftware\bin\Newtonsoft.Json.xml
+E:\ProperticaSoftware\ProperticaSoftware\bin\Antlr3.Runtime.pdb
+E:\ProperticaSoftware\ProperticaSoftware\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.csprojAssemblyReference.cache
+E:\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.csproj.CopyComplete
+E:\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.dll
+E:\ProperticaSoftware\ProperticaSoftware\obj\Debug\ProperticaSoftware.pdb

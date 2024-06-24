@@ -1,0 +1,272 @@
+﻿@model ProperticaSoftware.Models.Purchase
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div>
+    <div class="container">
+        <button class="mb-2 mr-2 btn-icon btn-pill btn btn-warning" style="float: right; margin-top: 40px;" data-toggle="modal" data-target="#PModal"><i class="fa fa-plus btn-icon-wrapper" style="font-size:13px;color:white;"> </i>Add Item</button>
+        <h1 style="color:#ffbb33">Item Purchased</h1>
+        <h5>@DateTime.Now.ToString("MMMM-yyyy") </h5>
+    </div>
+
+
+    @*Table Starts Here*@
+
+    <div class="main-card mb-3 card">
+        <div class="card-body">
+            <table data-toggle="table">
+                <thead>
+                    <tr>
+                        <th data-sortable="true">
+                            Item Name
+                        </th>
+                        <th data-sortable="true">
+                            U.P
+                        </th>
+                        <th data-sortable="true">
+                            Qty
+                        </th>
+                        <th data-field="description"
+                            data-sortable="true">
+                            Description
+                        </th>
+
+
+                        <th data-sortable="true">
+                            Paid By
+                        </th>
+                        <th data-sortable="true">
+                            Pay Date
+                        </th>
+
+
+                        <th data-sortable="true">
+                            Status
+                        </th>
+
+                        <th data-sortable="true">
+                            Ammount
+                        </th>
+
+
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @for (int i = 0; i <= 10; i++)
+                    {
+                    <tr>
+                        <td>Item Name</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>This is some description about the saly paid to the employ</td>
+                        <td>Paid By</td>
+                        <td>2019-11-2</td>
+
+                        <td>Status</td>
+                        <td>10</td>
+
+                    </tr>
+                    }
+
+                <tr>
+                    <td style="font-size:large">Total</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+
+                    <td>Total Ammount</td>
+
+                </tr>
+                </tbody>
+                @*Table Ends Here*@
+
+
+            </table>
+            <h4>Entries: 12</h4>
+        </div>
+    </div>
+
+
+    @*Modal For Purchase*@
+
+    <div class="modal fade" id="PModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style=" margin-top: 75px;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Item Information</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="col-form-label">Item Name <span class="text-danger">*</span></label>
+                                    <input class="form-control" type="text">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="col-form-label">Date<span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" data-toggle="datepicker">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="col-form-label">Price Per Unit</label>
+                                    <input class="form-control" type="text">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="col-form-label">Quantity</label>
+                                    <input class="form-control" type="text">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="col-form-label">Description</label>
+                                    <input class="form-control" type="text">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="col-form-label">Paid By</label>
+                                    <input class="form-control" type="text">
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="col-form-label">Ammount</label>
+                                    <input class="form-control" type="text">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="sel1" class="col-form-label">Status</label>
+                                    <select class="form-control" id="sel1">
+                                        <option disabled selected>Select Option</option>
+                                        <option>Paid</option>
+                                        <option>Pending</option>
+
+                                    </select>
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                    </form>
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*Scapfolded Files for Purchase*@
+
+@*<div>
+        <h4>Purchase</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Price)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Price)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Date)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Date)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Quantity)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Description)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.IsActive)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.IsActive)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>*@

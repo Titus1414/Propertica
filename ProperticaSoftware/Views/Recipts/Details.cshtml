@@ -1,0 +1,216 @@
+﻿@model ProperticaSoftware.Models.Recipt
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+    <div>
+        <div class="container">
+            <button class="mb-2 mr-2 btn-icon btn-pill btn btn-warning" style="float: right; margin-top: 40px;" data-toggle="modal" data-target="#PModal"><i class="fa fa-plus btn-icon-wrapper" style="font-size:13px;color:white;"> </i>Add Reciept</button>
+            <h1 style="color:#ffbb33">Reciept Information</h1>
+            <h5>@DateTime.Now.ToString("MMMM-yyyy") </h5>
+        </div>
+
+
+        @*Table Starts Here*@
+
+        <div class="main-card mb-3 card">
+            <div class="card-body">
+                <table data-toggle="table">
+                    <thead>
+                        <tr>
+                            <th data-sortable="true">
+                                Id
+                            </th>
+                            <th data-sortable="true">
+                                Name
+                            </th>
+                            <th data-sortable="true">
+                                Ammount
+                            </th>
+                            <th data-sortable="true">
+                                Rec Date
+                            </th>
+                            <th data-sortable="true">
+                                Rec BY
+                            </th>
+
+
+                            <th data-field="description"
+                                data-sortable="true">
+                                Description
+                            </th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @for (int i = 0; i <= 10; i++)
+                        {
+                        <tr>
+                            <td>@i</td>
+                            <td>Name</td>
+                            <td>Ammount</td>
+                            <td>Rec Date</td>
+                            <td>Rec By</td>
+                            <td>descripyion for the reciept</td>
+
+
+                        </tr>
+                        }
+
+
+                    </tbody>
+                    @*Table Ends Here*@
+
+
+                </table>
+                <h4>Entries: 11</h4>
+            </div>
+        </div>
+
+
+        @*Modal For Purchase*@
+
+        <div class="modal fade" id="PModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" style=" margin-top: 75px;">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Reciept Accounts</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="col-form-label">Account Id <span class="text-danger">*</span></label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="col-form-label">Name </label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="col-form-label">Recieving Date <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" data-toggle="datepicker">
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="col-form-label">Recieved By <span class="text-danger">*</span></label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="col-form-label">Ammount <span class="text-danger">*</span></label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="col-form-label">Description</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </form>
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*Scap folded Code For Reciepts*@
+@*<div>
+    <h4>Recipt</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Amount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RecDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RecDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsActive)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Account.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Account.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Employe.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Employe.Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>*@

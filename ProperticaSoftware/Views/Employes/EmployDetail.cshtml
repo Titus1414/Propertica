@@ -1,0 +1,627 @@
+﻿@model ProperticaSoftware.Models.Employe
+
+@{
+    ViewBag.Title = "EmployDetail";
+}
+    <link href="~/Content/css/font-awesome.min.css" rel="stylesheet" />
+    
+<style>
+    
+
+    /*.fileupload.btn {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background: rgba(33, 33, 33, 0.5);
+	border-radius: 0;
+	padding: 3px 10px;
+	border: none;
+}
+.fileupload input.upload {
+	cursor: pointer;
+	filter: alpha(opacity=0);
+	font-size: 20px;
+	margin: 0;
+	opacity: 0;
+	padding: 0;
+	position: absolute;
+	right: -3px;
+	top: -3px;
+	padding: 5px;
+}
+
+.profile-img-wrap.edit-img {
+    border-radius: 50%;
+    margin: 0 auto 30px;
+    position: relative;
+}
+.profile-img-wrap.edit-img .fileupload.btn {
+	left: 0;
+
+
+}*/
+
+    .semi-transparent-button {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 8px;
+  width: 80%;
+  max-width: 200px;
+  background: #fff; /* fallback color for old browsers */
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out;
+}
+
+
+
+    .upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+/*.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}*/
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+
+
+</style>
+
+
+
+<div class="card-hover-shadow card-border mb-3 card col-lg-7" style="width:auto;padding-right: 0px;">
+    
+    <div class="card-header" style="padding-left:0">
+    <div class="col-lg-8" style="padding-left:0">  <h3 @*style="margin-right: 620px;"*@>Employ Profile</h3>  </div>     <div class="col-lg-4" style="text-align:right;padding-right: 0px;">  <button class="mb-2 mr-2 btn-icon btn-pill btn btn-secondary" style="margin-top: 10px; margin-right:0px !important; /*margin-left: 9.5%;*/" data-toggle="modal" data-target="#EImodal"> <i class="pe-7s-pen btn-icon-wrapper"> </i>Edit</button> </div>        
+    </div>
+
+
+    <div class="card-body">
+
+        <div class="row">
+
+
+
+
+
+            <div class="col-md-12 col-sm-12">
+
+                <div style="float:left"><img class="card-img" src="~/Images/01.jpeg" style="height:200px;width:150px;border-radius:5%;" /> </div>
+
+                <div class="row">
+
+                    <div class="col-md-12 col-sm-12" style="margin-bottom:10px;">
+
+
+                        <div style="float:left;">
+                            <h3>Name</h3>
+                            <h6 class="text-muted" style="margin-bottom:4px">Designation</h6>
+                            <h6 class="text-muted" style="margin-bottom:4px">Department</h6>
+                            <div class="row" style="margin-bottom:4px;margin-left:0">Employee ID :<div style="margin-left:40px"> FT-12009</div></div>
+                            <div class="row" style="margin-bottom:4px;margin-left:0">Date of Join :<div style="margin-left:42px">1st Jan 2013</div> </div>
+                            <ul style="list-style-type:none;padding-left:0px">
+                                <li style="margin-bottom: 4px;margin-top:8px">
+                                    <div class="title" style="float:left;margin-right: 82px;">Phone:</div>
+                                    <div class="text"><a href="">9876543210</a></div>
+                                </li>
+                                <li style="margin-bottom: 4px;">
+                                    <div class="title" style="float:left;margin-right: 87px;">Email:</div>
+                                    <div class="text"><a href="">johndoe@example.com</a></div>
+                                </li>
+                                <li style="margin-bottom: 4px;">
+                                    <div class="title" style="float:left;margin-right: 67px;">Birthday:</div>
+                                    <div class="text">24th July</div>
+                                </li>
+                                <li style="margin-bottom: 4px;">
+                                    <div class="title" style="float:left;margin-right: 67px;margin-bottom:0px;margin-bottom: 19px;">Address:</div>
+                                    <span>1861 Bayonne Ave, Manchester Township, NJ, 08759</span>
+                                </li>
+
+                               
+
+                                    <li style="margin-bottom: 4px;">
+                                        <div class="title" style="float:left;margin-right: 75px;">Gender:</div>
+                                        <div class="text">Male</div>
+                                    </li>
+
+
+                                    <li style="margin-bottom: 4px;">
+                                        <div class="title" style="float:left;margin-right: 94px;">Cnic:</div>
+                                        <div class="text"><a href="">9228-76541-0</a></div>
+                                    </li>
+                                    <li style="margin-bottom: 4px;">
+                                        <div class="title" style="float:left;margin-right: 20px;">Cnic Expiry Date:</div>
+                                        <div class="text"><a href="">21-august-2080</a></div>
+                                    </li>
+                                    <li style="margin-bottom: 4px;">
+                                        <div class="title" style="float:left;margin-right: 105px;">Tel:</div>
+                                        <div class="text">0988989898</div>
+                                    </li>
+
+
+
+                                    <li style="margin-bottom: 4px;">
+                                        <div class="title" style="float:left;margin-right: 19px;">Reference Name:</div>
+                                        <div class="text"><a href="">Haider Ali</a></div>
+                                    </li>
+
+                                    <li style="margin-bottom: 4px;">
+                                        <div class="title" style="float:left;margin-right:82px;">Phone:</div>
+                                        <div class="text">0988989898</div>
+                                    </li>
+
+                                    <li style="margin-bottom: 4px;">
+                                        <div class="title" style="float:left;margin-right: 54px;">Nationality:</div>
+                                        Pakistan
+                                    </li>
+                                    <li style="margin-bottom: 4px;">
+                                        <div class="title" style="float:left;margin-right: 68px;">Relegion:</div>
+                                        <div class="text">Islam</div>
+                                    </li>
+                                    <li style="margin-bottom: 4px;">
+                                        <div class="title" style="float:left;margin-right: 34px;">Maritial Status:</div>
+                                        <div class="text">Not-Maried</div>
+                                    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                
+
+
+                            </ul>
+
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+
+                    @*<div class="col-md-6 col-sm-6" >
+
+
+
+
+
+                        <ul style="list-style-type: none;padding-left: 0px;margin-top:40px">
+
+                            <li style="margin-bottom: 4px;">
+                                <div class="title" style="float:left;margin-right: 75px;">Gender:</div>
+                                <div class="text">Male</div>
+                            </li>
+
+
+                            <li style="margin-bottom: 4px;">
+                                <div class="title" style="float:left;margin-right: 94px;">Cnic:</div>
+                                <div class="text"><a href="">9228-76541-0</a></div>
+                            </li>
+                            <li style="margin-bottom: 4px;">
+                                <div class="title" style="float:left;margin-right: 20px;">Cnic Expiry Date:</div>
+                                <div class="text"><a href="">21-august-2080</a></div>
+                            </li>
+                            <li style="margin-bottom: 4px;">
+                                <div class="title" style="float:left;margin-right: 105px;">Tel:</div>
+                                <div class="text">0988989898</div>
+                            </li>
+
+
+
+                            <li style="margin-bottom: 4px;">
+                                <div class="title" style="float:left;margin-right: 19px;">Reference Name:</div>
+                                <div class="text"><a href="">Haider Ali</a></div>
+                            </li>
+                       
+                            <li style="margin-bottom: 4px;">
+                                <div class="title" style="float:left;margin-right:82px;">Phone:</div>
+                                <div class="text">0988989898</div>
+                            </li>
+
+                            <li style="margin-bottom: 4px;">
+                                <div class="title" style="float:left;margin-right: 54px;">Nationality:</div>
+                                Pakistan
+                            </li>
+                            <li style="margin-bottom: 4px;">
+                                <div class="title" style="float:left;margin-right: 68px;">Relegion:</div>
+                                <div class="text">Islam</div>
+                            </li>
+                            <li style="margin-bottom: 4px;">
+                                <div class="title" style="float:left;margin-right: 34px;">Maritial Status:</div>
+                                <div class="text">Not-Maried</div>
+                            </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </ul>
+
+
+
+
+                    </div>*@
+
+                   
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        @*<div class="container" style=" padding-left: 0px;float:left">
+            <img class="card-img" src="~/Images/01.jpeg" style="height:100px;width:100px;border-radius:5%;float:left;margin-right: 20px;" />
+            <div style="float:left"><h4>Employ Name</h4><p >Department</p><p style=" margin-bottom: 10px;">Designation</p><h6>Employe ID:FS-dsdksdx3</h6><p>Dtae of Join:22nd August 2019</p> </div>
+        </div>
+        <div class="container" style=" padding-left: 0px;float:right">
+            <img class="card-img" src="~/Images/01.jpeg" style="height:100px;width:100px;border-radius:5%;float:left;margin-right: 20px;" />
+            <div style="float:left"><h4>Employ Name</h4><p >Department</p><p style=" margin-bottom: 10px;">Designation</p><h6>Employe ID:FS-dsdksdx3</h6><p>Dtae of Join:22nd August 2019</p> </div>
+        </div>*@
+
+    </div>
+    
+</div>
+
+    </div>
+
+@*<div class="row">
+    <div class="col-lg-6 ">
+
+        <div class="card-hover-shadow card-border mb-3 card" style="width:auto">
+
+
+            <div class="container" >
+
+                <div class="card-header">
+                    <h4>Personal Information</h4>
+                </div>
+
+                <ul style="list-style-type: none;padding-left: 0px;margin-left:5%">
+                    <li style="margin-bottom: 20px;">
+                        <div class="title" style="float:left;margin-right: 116px;">Cnic:</div>
+                        <div class="text"><a href="">9228-76541-0</a></div>
+                    </li>
+                    <li style="margin-bottom: 20px;">
+                        <div class="title" style="float:left;margin-right: 40px;">Cnic Expiry Date:</div>
+                        <div class="text"><a href="">21-august-2080</a></div>
+                    </li>
+                    <li style="margin-bottom: 20px;">
+                        <div class="title" style="float:left;margin-right: 122px;">Tel:</div>
+                        <div class="text">0988989898</div>
+                    </li>
+
+                    <li style="margin-bottom: 20px;">
+                        <div class="title" style="float:left;margin-right: 71px;">Nationality:</div>
+                        Pakistan
+                    </li>
+                    <li style="margin-bottom: 20px;">
+                        <div class="title" style="float:left;margin-right: 83px;">Relegion:</div>
+                        <div class="text">Islam</div>
+                    </li>
+                    <li style="margin-bottom: 20px;">
+                        <div class="title" style="float:left;margin-right: 46px;">Maritial Status:</div>
+                        <div class="text">Not-Maried</div>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+            
+
+
+
+
+
+        </div>
+    </div>
+    <div class="col-lg-6 ">
+        <div class="card-hover-shadow card-border mb-3 card" style="width:auto">
+
+
+            <div class="container">
+
+                <div class="card-header">
+                    <h4>Emergency Contact</h4>
+                </div>
+
+                <ul style="list-style-type: none;padding-left: 0px;margin-left:5%">
+                    <li style="margin-bottom: 20px;">
+                        <div class="title" style="float:left;margin-right: 116px;">Name:</div>
+                        <div class="text"><a href="">Haider Ali</a></div>
+                    </li>
+                    <li style="margin-bottom: 20px;">
+                        <div class="title" style="float:left;margin-right: 40px;">Relationship:</div>
+                        <div class="text"><a href="">phone</a></div>
+                    </li>
+
+
+
+                    <li style="margin-bottom: 20px;">
+                        <div class="title" style="float:left;margin-right: 122px;">Tel:</div>
+                        <div class="text">0988989898</div>
+                    </li>
+
+                    <li style="margin-bottom: 20px;">
+                        <div class="title" style="float:left;margin-right: 71px;">Nationality:</div>
+                        Pakistan
+                    </li>
+                    <li style="margin-bottom: 20px;">
+                        <div class="title" style="float:left;margin-right: 83px;">Relegion:</div>
+                        <div class="text">Islam</div>
+                    </li>
+                    <li style="margin-bottom: 20px;">
+                        <div class="title" style="float:left;margin-right: 46px;">Maritial Status:</div>
+                        <div class="text">Not-Maried</div>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+</div>*@
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*Details Modal*@
+
+    <div class="modal fade" id="EImodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="margin-top:30px">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+    
+                
+                    <div class="modal-header">
+                        <h5 class="modal-title">Profile Information</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <div class="container-fluid" style="text-align:center;margin-bottom:10px;">
+                                        <div class="container">
+                                            <img class="inline-block" src="/Images/01.jpeg" alt="user" style="text-align:center;width: 100px;border-radius:5px">
+                                        </div>
+                                        <div class="upload-btn-wrapper" style="">
+                                            <button class="btn" style="color:white;background: rgba(27, 26, 26, 0.5);">Upload a file</button>
+                                            <input type="file" name="myfile" />
+                                        </div>
+
+                                    </div>
+
+
+
+                                    @*<div class="profile-img-wrap edit-img" style="text-align:center">
+                                        <div class="container">
+                                            <img class="inline-block" src="/Images/01.jpeg" alt="user" style="text-align:center;width: 100px;border-radius:5px">
+                                        </div>
+
+
+                                        <div class="fileupload btn " style="width: 100px;margin-left:38%;margin-bottom: 2px;">
+                                            <span style="font-size:14px;color:white">edit</span>
+
+                                            <input class="upload" type="file" style="height: 27px;width: 100px;padding-right: 5px;margin-right: 4px;margin-left: 4px;margin-top: 2px;border-bottom-width: 2px;">
+
+
+                                        </div>
+
+                                        </div>*@
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>First Name</label>
+                                                    <input type="text" class="form-control" value="John">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Last Name</label>
+                                                    <input type="text" class="form-control" value="Doe">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Birth Date</label>
+                                                    <div class="cal-icon">
+                                                        <input class="form-control datetimepicker" type="text" value="05/06/1985">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Gender</label>
+
+                                                    <select class="form-control" id="sel1">
+                                                        <option disabled selected>Select Gender</option>
+                                                        <option>Male</option>
+                                                        <option>Female</option>
+
+                                                    </select>
+
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Address</label>
+                                        <input type="text" class="form-control" value="4487 Snowbird Lane">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>State</label>
+                                        <input type="text" class="form-control" value="New York">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Country</label>
+                                        <input type="text" class="form-control" value="United States">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Pin Code</label>
+                                        <input type="text" class="form-control" value="10523">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Phone Number</label>
+                                        <input type="text" class="form-control" value="631-889-3206">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="sel1" class="col-form-label">Department</label>
+                                        <select class="form-control" id="sel1">
+                                            <option disabled selected>Select Option</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="sel1" class="col-form-label">Designation</label>
+                                        <select class="form-control" id="sel1">
+                                            <option disabled selected>Select Option</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="submit-section">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                
+            </div>
+        </div>
+  
+
+
+
+
+
+
+
+   
+
+
+

@@ -1,0 +1,226 @@
+﻿@model IEnumerable<ProperticaSoftware.Models.EmpAtt>
+
+@{
+    var CurrentName = "";
+    Layout = null;
+}
+
+<style>
+
+    .avatar {
+        background-color: white;
+        border-radius: 10%;
+        color: #fff;
+        display: inline-block;
+        font-weight: 500;
+        height: 38px;
+        line-height: 38px;
+        margin: 0 10px 0 0;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        vertical-align: middle;
+        width: 38px;
+        position: relative;
+        white-space: nowrap;
+    }
+
+    table.table td h2.table-avatar {
+        align-items: center;
+        display: inline-flex;
+        font-size: inherit;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        vertical-align: middle;
+        white-space: nowrap;
+    }
+
+        table.table td h2.table-avatar.blue-link a {
+            color: #007bff;
+        }
+
+    .avatar.avatar-xs {
+        width: 40px;
+    }
+
+
+    .avatar > img {
+        border-radius: 10%;
+        display: block;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .avatar-box {
+        float: left;
+    }
+</style>
+
+@{
+    DateTime utcTime = DateTime.UtcNow;
+    TimeZoneInfo myZone = TimeZoneInfo.FindSystemTimeZoneById("Pakistan Standard Time");
+    DateTime custDateTime = TimeZoneInfo.ConvertTimeFromUtc(utcTime, myZone);
+    int days = DateTime.DaysInMonth(Convert.ToInt32(custDateTime.ToString("yyyy")), (Convert.ToInt32(custDateTime.ToString("MM"))));
+    var mnth = Convert.ToInt32(custDateTime.ToString("MM"));
+    int NewMonth = ViewBag.MonthCh != null ? ViewBag.MonthCh : 0;
+    var mnthVal = mnth;
+    if (NewMonth > 0)
+    {
+        if (ViewBag.MonthCh != mnth)
+        {
+            days = DateTime.DaysInMonth(Convert.ToInt32(custDateTime.ToString("yyyy")), NewMonth);
+            mnthVal = ViewBag.MonthCh != null ? ViewBag.MonthCh : mnth;
+        }
+    }
+}
+
+<div class="jumbotron-fluid">
+    <h1 style="color:black">Monthly Attendence</h1>
+    @*<h3 style="color:black">Month : @mnth</h3>*@
+    <input style="color:black" type="text" id="monthVL" name="monthVL" value="@mnthVal" disabled />
+</div>
+<br />
+<div class="container-fluid" style="padding-left: 0px;">
+    <button class="mb-2 mr-2 btn-icon btn btn-dark prevM" style="text-align:center;font-size: 5px;"><i class="fa fa-long-arrow-left btn-icon-wrapper"> </i></button>
+    <button class="mb-2 mr-2 btn-icon btn btn-dark nextM" style="text-align:center; font-size: 5px;"><i class="fa fa-long-arrow-right btn-icon-wrapper"> </i></button>
+</div>
+
+<div style="background-color:white">
+    <div>
+        <table class="table  table-hover  table-bordered">
+            <thead class="thead-dark">
+                <tr class="d-flex">
+                    <th class="col-xs-2" style="padding-right: 15%;">Name</th>
+                    @for (int i = 1; i <= days; i++)
+                    {
+                        <th class="col-xs-2">@i</th>
+                    }
+                </tr>
+            </thead>
+            <tbody id="tdy">
+                @if (Model.Count() > 0)
+                {
+                    foreach (var item in Model)
+                    {
+                        if (CurrentName != item.Emp_name)
+                        {
+                            CurrentName = item.Emp_name;
+                            <tr class="d-flex" id="trPg">
+                                <td class="col-xs-10" style="font-size: smaller;padding-right: 0px;border-right-width: 0px;margin-right: 0px;">
+                                    <div class="row" style="height:7%">
+                                        <div class="col-md-3">
+                                            <a class="avatar avatar-xs" style="margin-left: 6%;" href="#">
+
+                                                <img src="@Url.Content(item.img)" class="" style="height:50px" />
+                                            </a>
+                                        </div>
+                                        <div class="col-md-9" style="width:210px;padding-left: 30px;">
+                                            <div style="float: left;margin-left:0px;margin-top: 0px;">
+                                                <span>    <a style="color:#e67300;  font-size:12px" href="#">@item.Emp_name</a><br /></span>
+                                                <span> <a style="color:#44392f;  font-size:10px" href="#">@item.depart</a><br /> </span>
+                                                <span>  <a style="color:#948b82;  font-size:9.2px" href="#">@item.desig</a> </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                @for (int j = 1; j <= days; j++)
+                                {
+                                    {
+                                        var GetThatDayValue = Model.Where(a => a.Dt.Value.Day == j && a.Emp_name == item.Emp_name).FirstOrDefault();
+                                        var DD = GetThatDayValue != null ? GetThatDayValue.status.ToString() : "";
+                                        <td class="col-xs-2">
+                                            @if (DD == "Present")
+                                            {
+                                                <i><img src="~/Images/Attnd/WhatsApp Image 2019-11-19 at 00.01.26 (1).jpeg" style="margin-top:35px" /></i>
+                                            }
+                                            else if (DD == "Absent")
+                                            {
+                                                <i><img src="~/Images/Attnd/WhatsApp Image 2019-11-19 at 00.01.26 (3).jpeg" style="margin-top:35px" /></i>
+                                            }
+                                            else if (DD == "Leave")
+                                            {
+                                                <i><img src="~/Images/Attnd/WhatsApp Image 2019-11-19 at 00.01.26 (5).jpeg" style="margin-top:35px" /></i>
+                                            }
+                                            else if (DD == "Half Day")
+                                            {
+                                                <i><img src="~/Images/Attnd/WhatsApp Image 2019-11-19 at 00.01.26 (4).jpeg" style="margin-top:35px" /></i>
+                                            }
+                                            else if (DD == "Late")
+                                            {
+                                                <i><img src="~/Images/Attnd/WhatsApp Image 2019-11-19 at 00.01.26 (2).jpeg" style="margin-top:35px" /></i>
+                                            }
+                                            else
+                                            {
+                                                <i><img src="~/Images/Attnd/image (1).png" style="margin-top:35px" /></i>
+                                            }
+                                        </td>
+                                    }
+                                }
+                            </tr>
+                        }
+                    }
+                }
+                else
+                {
+                    <tr onload="clear()">
+                        <td>
+                            <h1>No Record</h1>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </div>
+</div>
+
+
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        //$('body').on("click", ".prevM", function () {
+        $(".prevM").unbind().click(function() {
+            debugger
+            var monthVal = $('#monthVL').val();
+            var mnthvl = monthVal - 1;
+            $('input#monthVL').val(mnthvl);
+            if (monthVal > 0 && monthVal <= 12) {
+                $.post('@Url.Action("PervMonth", "Home")', { mnth: mnthvl }, function (data) {
+                    debugger
+                    if (data.length == 0) {
+                        $('#tdy').remove();
+                    } else {
+                        $("#AttndRcd").html(data);
+                    }
+                }
+                );
+                $('input#monthVL').val(mnthvl);
+            }
+        })
+
+        //$('body').on("click", ".nextM", function () {
+        $(".nextM").unbind().click(function() {
+            debugger
+            var monthVal = $('#monthVL').val();
+            monthVal ++;
+            $('input#monthVL').val(monthVal);
+            if (monthVal > 0 && monthVal <= 12) {
+
+                $.post('@Url.Action("PervMonth", "Home")', { mnth: monthVal }, function (data) {
+                    debugger
+                    if (data.length == 0) {
+                        $('#tdy').remove();
+                    }
+                    else {
+                        $("#AttndRcd").html(data);
+                    }
+                }
+                );
+                $('input#monthVL').val(monthVal);
+            }
+        })
+    });
+
+</script>

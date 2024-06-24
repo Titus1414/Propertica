@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SoftDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="SoftDBEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="sp_AttendencRecord" ReturnType="Collection(SoftDBModel.sp_AttendencRecord_Result)" />
+    <EntitySet Name="Accounts" EntityType="SoftDBModel.Account" />
+    <EntitySet Name="Attendences" EntityType="SoftDBModel.Attendence" />
+    <EntitySet Name="AttendenceRecords" EntityType="SoftDBModel.AttendenceRecord" />
+    <EntitySet Name="Departments" EntityType="SoftDBModel.Department" />
+    <EntitySet Name="Designations" EntityType="SoftDBModel.Designation" />
+    <EntitySet Name="Employes" EntityType="SoftDBModel.Employe" />
+    <EntitySet Name="Purchases" EntityType="SoftDBModel.Purchase" />
+    <EntitySet Name="Recipts" EntityType="SoftDBModel.Recipt" />
+    <EntitySet Name="Salaries" EntityType="SoftDBModel.Salary" />
+    <EntitySet Name="Status" EntityType="SoftDBModel.Status" />
+    <EntitySet Name="sysdiagrams" EntityType="SoftDBModel.sysdiagram" />
+    <EntitySet Name="Users" EntityType="SoftDBModel.User" />
+    <EntitySet Name="User1" EntityType="SoftDBModel.User1" />
+    <AssociationSet Name="FK_Recipt_Account" Association="SoftDBModel.FK_Recipt_Account">
+      <End Role="Account" EntitySet="Accounts" />
+      <End Role="Recipt" EntitySet="Recipts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Attendence_AttendenceRecord" Association="SoftDBModel.FK_Attendence_AttendenceRecord">
+      <End Role="AttendenceRecord" EntitySet="AttendenceRecords" />
+      <End Role="Attendence" EntitySet="Attendences" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Attendence_Department" Association="SoftDBModel.FK_Attendence_Department">
+      <End Role="Department" EntitySet="Departments" />
+      <End Role="Attendence" EntitySet="Attendences" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Attendence_Designation" Association="SoftDBModel.FK_Attendence_Designation">
+      <End Role="Designation" EntitySet="Designations" />
+      <End Role="Attendence" EntitySet="Attendences" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Attendence_Employes" Association="SoftDBModel.FK_Attendence_Employes">
+      <End Role="Employe" EntitySet="Employes" />
+      <End Role="Attendence" EntitySet="Attendences" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Attendence_Status" Association="SoftDBModel.FK_Attendence_Status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="Attendence" EntitySet="Attendences" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AttendenceRecord_Attendence" Association="SoftDBModel.FK_AttendenceRecord_Attendence">
+      <End Role="Attendence" EntitySet="Attendences" />
+      <End Role="AttendenceRecord" EntitySet="AttendenceRecords" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employes_Attendence" Association="SoftDBModel.FK_Employes_Attendence">
+      <End Role="Attendence" EntitySet="Attendences" />
+      <End Role="Employe" EntitySet="Employes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AttendenceRecord_Employes" Association="SoftDBModel.FK_AttendenceRecord_Employes">
+      <End Role="Employe" EntitySet="Employes" />
+      <End Role="AttendenceRecord" EntitySet="AttendenceRecords" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AttendenceRecord_Status" Association="SoftDBModel.FK_AttendenceRecord_Status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="AttendenceRecord" EntitySet="AttendenceRecords" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employes_AttendenceRecord" Association="SoftDBModel.FK_Employes_AttendenceRecord">
+      <End Role="AttendenceRecord" EntitySet="AttendenceRecords" />
+      <End Role="Employe" EntitySet="Employes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Designation_Department" Association="SoftDBModel.FK_Designation_Department">
+      <End Role="Department" EntitySet="Departments" />
+      <End Role="Designation" EntitySet="Designations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employes_Department1" Association="SoftDBModel.FK_Employes_Department1">
+      <End Role="Department" EntitySet="Departments" />
+      <End Role="Employe" EntitySet="Employes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employes_Designation" Association="SoftDBModel.FK_Employes_Designation">
+      <End Role="Designation" EntitySet="Designations" />
+      <End Role="Employe" EntitySet="Employes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employes_User" Association="SoftDBModel.FK_Employes_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Employe" EntitySet="Employes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Recipt_Employes" Association="SoftDBModel.FK_Recipt_Employes">
+      <End Role="Employe" EntitySet="Employes" />
+      <End Role="Recipt" EntitySet="Recipts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Salary_Employes" Association="SoftDBModel.FK_Salary_Employes">
+      <End Role="Employe" EntitySet="Employes" />
+      <End Role="Salary" EntitySet="Salaries" />
+    </AssociationSet>
+  </EntityContainer>
+  <ComplexType Name="sp_AttendencRecord_Result">
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="d1" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="d2" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="d3" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="d4" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="Recipts" Relationship="SoftDBModel.FK_Recipt_Account" FromRole="Account" ToRole="Recipt" />
+  </EntityType>
+  <EntityType Name="Attendence">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Eid" Type="Int32" />
+    <Property Name="Sid" Type="Int32" />
+    <Property Name="Dsid" Type="Int32" />
+    <Property Name="Did" Type="Int32" />
+    <Property Name="Atrid" Type="Int32" />
+    <Property Name="Time" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Date" Type="DateTime" Precision="0" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="AttendenceRecord" Relationship="SoftDBModel.FK_Attendence_AttendenceRecord" FromRole="Attendence" ToRole="AttendenceRecord" />
+    <NavigationProperty Name="Department" Relationship="SoftDBModel.FK_Attendence_Department" FromRole="Attendence" ToRole="Department" />
+    <NavigationProperty Name="Designation" Relationship="SoftDBModel.FK_Attendence_Designation" FromRole="Attendence" ToRole="Designation" />
+    <NavigationProperty Name="Employe" Relationship="SoftDBModel.FK_Attendence_Employes" FromRole="Attendence" ToRole="Employe" />
+    <NavigationProperty Name="Status" Relationship="SoftDBModel.FK_Attendence_Status" FromRole="Attendence" ToRole="Status" />
+    <NavigationProperty Name="AttendenceRecords" Relationship="SoftDBModel.FK_AttendenceRecord_Attendence" FromRole="Attendence" ToRole="AttendenceRecord" />
+    <NavigationProperty Name="Employes" Relationship="SoftDBModel.FK_Employes_Attendence" FromRole="Attendence" ToRole="Employe" />
+  </EntityType>
+  <EntityType Name="AttendenceRecord">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Atid" Type="Int32" />
+    <Property Name="Sid" Type="Int32" />
+    <Property Name="Eid" Type="Int32" />
+    <Property Name="Date" Type="DateTime" Precision="0" />
+    <Property Name="Time" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="Attendences" Relationship="SoftDBModel.FK_Attendence_AttendenceRecord" FromRole="AttendenceRecord" ToRole="Attendence" />
+    <NavigationProperty Name="Attendence" Relationship="SoftDBModel.FK_AttendenceRecord_Attendence" FromRole="AttendenceRecord" ToRole="Attendence" />
+    <NavigationProperty Name="Employe" Relationship="SoftDBModel.FK_AttendenceRecord_Employes" FromRole="AttendenceRecord" ToRole="Employe" />
+    <NavigationProperty Name="Status" Relationship="SoftDBModel.FK_AttendenceRecord_Status" FromRole="AttendenceRecord" ToRole="Status" />
+    <NavigationProperty Name="Employes" Relationship="SoftDBModel.FK_Employes_AttendenceRecord" FromRole="AttendenceRecord" ToRole="Employe" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="Attendences" Relationship="SoftDBModel.FK_Attendence_Department" FromRole="Department" ToRole="Attendence" />
+    <NavigationProperty Name="Designations" Relationship="SoftDBModel.FK_Designation_Department" FromRole="Department" ToRole="Designation" />
+    <NavigationProperty Name="Employes" Relationship="SoftDBModel.FK_Employes_Department1" FromRole="Department" ToRole="Employe" />
+  </EntityType>
+  <EntityType Name="Designation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Did" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="Attendences" Relationship="SoftDBModel.FK_Attendence_Designation" FromRole="Designation" ToRole="Attendence" />
+    <NavigationProperty Name="Department" Relationship="SoftDBModel.FK_Designation_Department" FromRole="Designation" ToRole="Department" />
+    <NavigationProperty Name="Employes" Relationship="SoftDBModel.FK_Employes_Designation" FromRole="Designation" ToRole="Employe" />
+  </EntityType>
+  <EntityType Name="Employe">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Uid" Type="Int32" />
+    <Property Name="Did" Type="Int32" />
+    <Property Name="Dsid" Type="Int32" />
+    <Property Name="Atid" Type="Int32" />
+    <Property Name="Atrid" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Age" Type="Int32" />
+    <Property Name="CNIC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateOfBirth" Type="DateTime" Precision="0" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Landline" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="JoiningDate" Type="DateTime" Precision="0" />
+    <Property Name="TerminationDate" Type="DateTime" Precision="0" />
+    <Property Name="Picture" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="Attendences" Relationship="SoftDBModel.FK_Attendence_Employes" FromRole="Employe" ToRole="Attendence" />
+    <NavigationProperty Name="Attendence" Relationship="SoftDBModel.FK_Employes_Attendence" FromRole="Employe" ToRole="Attendence" />
+    <NavigationProperty Name="AttendenceRecords" Relationship="SoftDBModel.FK_AttendenceRecord_Employes" FromRole="Employe" ToRole="AttendenceRecord" />
+    <NavigationProperty Name="AttendenceRecord" Relationship="SoftDBModel.FK_Employes_AttendenceRecord" FromRole="Employe" ToRole="AttendenceRecord" />
+    <NavigationProperty Name="Department" Relationship="SoftDBModel.FK_Employes_Department1" FromRole="Employe" ToRole="Department" />
+    <NavigationProperty Name="Designation" Relationship="SoftDBModel.FK_Employes_Designation" FromRole="Employe" ToRole="Designation" />
+    <NavigationProperty Name="User" Relationship="SoftDBModel.FK_Employes_User" FromRole="Employe" ToRole="User" />
+    <NavigationProperty Name="Recipts" Relationship="SoftDBModel.FK_Recipt_Employes" FromRole="Employe" ToRole="Recipt" />
+    <NavigationProperty Name="Salaries" Relationship="SoftDBModel.FK_Salary_Employes" FromRole="Employe" ToRole="Salary" />
+  </EntityType>
+  <EntityType Name="Purchase">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Price" Type="Decimal" Precision="18" Scale="10" />
+    <Property Name="Date" Type="DateTime" Precision="0" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="Description" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Recipt">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Aid" Type="Int32" />
+    <Property Name="Amount" Type="Decimal" Precision="18" Scale="10" />
+    <Property Name="RecDate" Type="DateTime" Precision="0" />
+    <Property Name="RecByEid" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="Account" Relationship="SoftDBModel.FK_Recipt_Account" FromRole="Recipt" ToRole="Account" />
+    <NavigationProperty Name="Employe" Relationship="SoftDBModel.FK_Recipt_Employes" FromRole="Recipt" ToRole="Employe" />
+  </EntityType>
+  <EntityType Name="Salary">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Eid" Type="Int32" />
+    <Property Name="PaidBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PayDate" Type="DateTime" Precision="0" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Amount" Type="Decimal" Precision="18" Scale="10" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="Employe" Relationship="SoftDBModel.FK_Salary_Employes" FromRole="Salary" ToRole="Employe" />
+  </EntityType>
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Status1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="Attendences" Relationship="SoftDBModel.FK_Attendence_Status" FromRole="Status" ToRole="Attendence" />
+    <NavigationProperty Name="AttendenceRecords" Relationship="SoftDBModel.FK_AttendenceRecord_Status" FromRole="Status" ToRole="AttendenceRecord" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="Employes" Relationship="SoftDBModel.FK_Employes_User" FromRole="User" ToRole="Employe" />
+  </EntityType>
+  <EntityType Name="User1">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Age" Type="Int32" />
+    <Property Name="CNIC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateOfBirth" Type="DateTime" Precision="0" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Landline" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK_Recipt_Account">
+    <End Type="SoftDBModel.Account" Role="Account" Multiplicity="0..1" />
+    <End Type="SoftDBModel.Recipt" Role="Recipt" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Recipt">
+        <PropertyRef Name="Aid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Attendence_AttendenceRecord">
+    <End Type="SoftDBModel.AttendenceRecord" Role="AttendenceRecord" Multiplicity="0..1" />
+    <End Type="SoftDBModel.Attendence" Role="Attendence" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AttendenceRecord">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Attendence">
+        <PropertyRef Name="Atrid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Attendence_Department">
+    <End Type="SoftDBModel.Department" Role="Department" Multiplicity="0..1" />
+    <End Type="SoftDBModel.Attendence" Role="Attendence" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Attendence">
+        <PropertyRef Name="Did" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Attendence_Designation">
+    <End Type="SoftDBModel.Designation" Role="Designation" Multiplicity="0..1" />
+    <End Type="SoftDBModel.Attendence" Role="Attendence" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Designation">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Attendence">
+        <PropertyRef Name="Dsid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Attendence_Employes">
+    <End Type="SoftDBModel.Employe" Role="Employe" Multiplicity="0..1" />
+    <End Type="SoftDBModel.Attendence" Role="Attendence" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employe">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Attendence">
+        <PropertyRef Name="Eid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Attendence_Status">
+    <End Type="SoftDBModel.Status" Role="Status" Multiplicity="0..1" />
+    <End Type="SoftDBModel.Attendence" Role="Attendence" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Attendence">
+        <PropertyRef Name="Sid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AttendenceRecord_Attendence">
+    <End Type="SoftDBModel.Attendence" Role="Attendence" Multiplicity="0..1" />
+    <End Type="SoftDBModel.AttendenceRecord" Role="AttendenceRecord" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Attendence">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AttendenceRecord">
+        <PropertyRef Name="Atid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employes_Attendence">
+    <End Type="SoftDBModel.Attendence" Role="Attendence" Multiplicity="0..1" />
+    <End Type="SoftDBModel.Employe" Role="Employe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Attendence">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Employe">
+        <PropertyRef Name="Atid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AttendenceRecord_Employes">
+    <End Type="SoftDBModel.Employe" Role="Employe" Multiplicity="0..1" />
+    <End Type="SoftDBModel.AttendenceRecord" Role="AttendenceRecord" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employe">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AttendenceRecord">
+        <PropertyRef Name="Eid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AttendenceRecord_Status">
+    <End Type="SoftDBModel.Status" Role="Status" Multiplicity="0..1" />
+    <End Type="SoftDBModel.AttendenceRecord" Role="AttendenceRecord" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AttendenceRecord">
+        <PropertyRef Name="Sid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employes_AttendenceRecord">
+    <End Type="SoftDBModel.AttendenceRecord" Role="AttendenceRecord" Multiplicity="0..1" />
+    <End Type="SoftDBModel.Employe" Role="Employe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AttendenceRecord">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Employe">
+        <PropertyRef Name="Atrid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Designation_Department">
+    <End Type="SoftDBModel.Department" Role="Department" Multiplicity="0..1" />
+    <End Type="SoftDBModel.Designation" Role="Designation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Designation">
+        <PropertyRef Name="Did" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employes_Department1">
+    <End Type="SoftDBModel.Department" Role="Department" Multiplicity="0..1" />
+    <End Type="SoftDBModel.Employe" Role="Employe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Employe">
+        <PropertyRef Name="Did" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employes_Designation">
+    <End Type="SoftDBModel.Designation" Role="Designation" Multiplicity="0..1" />
+    <End Type="SoftDBModel.Employe" Role="Employe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Designation">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Employe">
+        <PropertyRef Name="Dsid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employes_User">
+    <End Type="SoftDBModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="SoftDBModel.Employe" Role="Employe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Employe">
+        <PropertyRef Name="Uid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Recipt_Employes">
+    <End Type="SoftDBModel.Employe" Role="Employe" Multiplicity="0..1" />
+    <End Type="SoftDBModel.Recipt" Role="Recipt" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employe">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Recipt">
+        <PropertyRef Name="RecByEid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Salary_Employes">
+    <End Type="SoftDBModel.Employe" Role="Employe" Multiplicity="0..1" />
+    <End Type="SoftDBModel.Salary" Role="Salary" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employe">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Salary">
+        <PropertyRef Name="Eid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

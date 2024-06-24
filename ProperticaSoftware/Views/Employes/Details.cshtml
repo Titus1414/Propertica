@@ -1,0 +1,1475 @@
+﻿@model IEnumerable<ProperticaSoftware.Models.Employe>
+
+@{
+
+
+    ViewBag.Title = "Details";
+    Layout = null;
+}
+
+
+<!doctype html>
+<html lang="en">
+
+
+
+<head>
+
+
+
+    <link href="~/Content/css/main.87c0748b313a1dda75f5.css" rel="stylesheet" />
+
+
+</head>
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>    <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn btn-warning">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">
+                            Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">
+                                                    Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">
+                                                    Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">
+                                                    Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">
+                                                    Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">
+                                                    Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">
+                                                    Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">
+                                        Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">
+                                        Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div> Main Content Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">
+                                        Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">
+                                        Light Color Schemes
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="app-theme-white">
+                                                White Theme
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="app-theme-gray">
+                                                Gray Theme
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    <div class="app-main">
+            <div class="app-sidebar sidebar-shadow">
+                <div class="app-header__logo">
+                    <div class="logo-src"></div>
+                    <div class="header__pane ml-auto">
+                        <div>
+                            <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-header__mobile-menu">
+                    <div>
+                        <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="app-header__menu">
+                    <span>
+                        <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                            <span class="btn-icon-wrapper">
+                                <i class="fa fa-ellipsis-v fa-w-6"></i>
+                            </span>
+                        </button>
+                    </span>
+                </div>    <div class="scrollbar-sidebar">
+                    <div class="app-sidebar__inner">
+                        <ul class="vertical-nav-menu">
+                            <li class="app-sidebar__heading">Menu</li>
+                            <li>
+                                <a href="#">
+                                    <i class="metismenu-icon pe-7s-rocket"></i>
+                                    Dashboards
+                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="index.html">
+                                            <i class="metismenu-icon">
+                                            </i>Analytics
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="dashboards-commerce.html">
+                                            <i class="metismenu-icon">
+                                            </i>Commerce
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="dashboards-sales.html">
+                                            <i class="metismenu-icon">
+                                            </i>Sales
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="metismenu-icon"></i>
+                                            Minimal
+                                            <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="dashboards-minimal-1.html">
+                                                    <i class="metismenu-icon">
+                                                    </i>Variation 1
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="dashboards-minimal-2.html">
+                                                    <i class="metismenu-icon">
+                                                    </i>Variation 2
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="dashboards-crm.html">
+                                            <i class="metismenu-icon"></i>
+                                            CRM
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="metismenu-icon pe-7s-browser"></i>
+                                    Pages
+                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="pages-login.html">
+                                            <i class="metismenu-icon"></i>
+                                            Login
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="pages-login-boxed.html">
+                                            <i class="metismenu-icon">
+                                            </i>Login Boxed
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="pages-register.html">
+                                            <i class="metismenu-icon">
+                                            </i>Register
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="pages-register-boxed.html">
+                                            <i class="metismenu-icon">
+                                            </i>Register Boxed
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="pages-forgot-password.html">
+                                            <i class="metismenu-icon">
+                                            </i>Forgot Password
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="pages-forgot-password-boxed.html">
+                                            <i class="metismenu-icon">
+                                            </i>Forgot Password Boxed
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="metismenu-icon pe-7s-plugin"></i>
+                                    Applications
+                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="apps-mailbox.html">
+                                            <i class="metismenu-icon">
+                                            </i>Mailbox
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="apps-chat.html">
+                                            <i class="metismenu-icon">
+                                            </i>Chat
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="apps-faq-section.html">
+                                            <i class="metismenu-icon">
+                                            </i>FAQ Section
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="metismenu-icon"></i>
+                                            Forums
+                                            <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="apps-forum-list.html">
+                                                    <i class="metismenu-icon">
+                                                    </i>Forum Listing
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="apps-forum-threads.html">
+                                                    <i class="metismenu-icon">
+                                                    </i>Forum Threads
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="apps-forum-discussion.html">
+                                                    <i class="metismenu-icon">
+                                                    </i>Forum Discussion
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="app-sidebar__heading">UI Components</li>
+                            <li>
+                                <a href="#">
+                                    <i class="metismenu-icon pe-7s-diamond"></i>
+                                    Elements
+                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="metismenu-icon"></i>
+                                            Buttons
+                                            <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="elements-buttons-standard.html">
+                                                    <i class="metismenu-icon">
+                                                    </i>Standard
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="elements-buttons-pills.html">
+                                                    <i class="metismenu-icon">
+                                                    </i>Pills
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="elements-buttons-square.html">
+                                                    <i class="metismenu-icon">
+                                                    </i>Square
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="elements-buttons-shadow.html">
+                                                    <i class="metismenu-icon">
+                                                    </i>Shadow
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="elements-buttons-icons.html">
+                                                    <i class="metismenu-icon">
+                                                    </i>With Icons
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="elements-dropdowns.html">
+                                            <i class="metismenu-icon">
+                                            </i>Dropdowns
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="elements-icons.html">
+                                            <i class="metismenu-icon">
+                                            </i>Icons
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="elements-badges-labels.html">
+                                            <i class="metismenu-icon">
+                                            </i>Badges
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="elements-cards.html">
+                                            <i class="metismenu-icon">
+                                            </i>Cards
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="elements-loaders.html">
+                                            <i class="metismenu-icon">
+                                            </i>Loading Indicators
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="elements-list-group.html">
+                                            <i class="metismenu-icon">
+                                            </i>List Groups
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="elements-navigation.html">
+                                            <i class="metismenu-icon">
+                                            </i>Navigation Menus
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="elements-timelines.html">
+                                            <i class="metismenu-icon">
+                                            </i>Timeline
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="elements-utilities.html">
+                                            <i class="metismenu-icon">
+                                            </i>Utilities
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="mm-active">
+                                <a href="#">
+                                    <i class="metismenu-icon pe-7s-car"></i>
+                                    Components
+                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                </a>
+                                <ul class="mm-show">
+                                    <li>
+                                        <a href="components-tabs.html">
+                                            <i class="metismenu-icon">
+                                            </i>Tabs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="components-accordions.html">
+                                            <i class="metismenu-icon">
+                                            </i>Accordions
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="components-notifications.html">
+                                            <i class="metismenu-icon">
+                                            </i>Notifications
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="components-modals.html" class="mm-active">
+                                            <i class="metismenu-icon">
+                                            </i>Modals
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="components-loading-blocks.html">
+                                            <i class="metismenu-icon">
+                                            </i>Loading Blockers
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="components-progress-bar.html">
+                                            <i class="metismenu-icon">
+                                            </i>Progress Bar
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="components-tooltips-popovers.html">
+                                            <i class="metismenu-icon">
+                                            </i>Tooltips &amp; Popovers
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="components-carousel.html">
+                                            <i class="metismenu-icon">
+                                            </i>Carousel
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="components-calendar.html">
+                                            <i class="metismenu-icon">
+                                            </i>Calendar
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="components-pagination.html">
+                                            <i class="metismenu-icon">
+                                            </i>Pagination
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="components-count-up.html">
+                                            <i class="metismenu-icon">
+                                            </i>Count Up
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="components-scrollable-elements.html">
+                                            <i class="metismenu-icon">
+                                            </i>Scrollable
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="components-tree-view.html">
+                                            <i class="metismenu-icon">
+                                            </i>Tree View
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="components-maps.html">
+                                            <i class="metismenu-icon">
+                                            </i>Maps
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="components-ratings.html">
+                                            <i class="metismenu-icon">
+                                            </i>Ratings
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="components-image-crop.html">
+                                            <i class="metismenu-icon">
+                                            </i>Image Crop
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="components-guided-tours.html">
+                                            <i class="metismenu-icon">
+                                            </i>Guided Tours
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="metismenu-icon pe-7s-display2"></i>
+                                    Tables
+                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="tables-data-tables.html">
+                                            <i class="metismenu-icon">
+                                            </i>Data Tables
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="tables-regular.html">
+                                            <i class="metismenu-icon">
+                                            </i>Regular Tables
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="tables-grid.html">
+                                            <i class="metismenu-icon">
+                                            </i>Grid Tables
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="app-sidebar__heading">Dashboard Widgets</li>
+                            <li>
+                                <a href="widgets-chart-boxes.html">
+                                    <i class="metismenu-icon pe-7s-graph">
+                                    </i>Chart Boxes 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="widgets-chart-boxes-2.html">
+                                    <i class="metismenu-icon pe-7s-way">
+                                    </i>Chart Boxes 2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="widgets-chart-boxes-3.html">
+                                    <i class="metismenu-icon pe-7s-ball">
+                                    </i>Chart Boxes 3
+                                </a>
+                            </li>
+                            <li>
+                                <a href="widgets-profile-boxes.html">
+                                    <i class="metismenu-icon pe-7s-id">
+                                    </i>Profile Boxes
+                                </a>
+                            </li>
+                            <li class="app-sidebar__heading">Forms</li>
+                            <li>
+                                <a href="#">
+                                    <i class="metismenu-icon pe-7s-light"></i>
+                                    Elements
+                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="forms-controls.html">
+                                            <i class="metismenu-icon">
+                                            </i>Controls
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="forms-layouts.html">
+                                            <i class="metismenu-icon">
+                                            </i>Layouts
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="forms-validation.html">
+                                            <i class="metismenu-icon">
+                                            </i>Validation
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="forms-wizard.html">
+                                            <i class="metismenu-icon">
+                                            </i>Wizard
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="metismenu-icon pe-7s-joy"></i>
+                                    Widgets
+                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="forms-datepicker.html">
+                                            <i class="metismenu-icon">
+                                            </i>Datepicker
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="forms-range-slider.html">
+                                            <i class="metismenu-icon">
+                                            </i>Range Slider
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="forms-input-selects.html">
+                                            <i class="metismenu-icon">
+                                            </i>Input Selects
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="forms-toggle-switch.html">
+                                            <i class="metismenu-icon">
+                                            </i>Toggle Switch
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="forms-wysiwyg-editor.html">
+                                            <i class="metismenu-icon">
+                                            </i>WYSIWYG Editor
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="forms-input-mask.html">
+                                            <i class="metismenu-icon">
+                                            </i>Input Mask
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="forms-clipboard.html">
+                                            <i class="metismenu-icon">
+                                            </i>Clipboard
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="forms-textarea-autosize.html">
+                                            <i class="metismenu-icon">
+                                            </i>Textarea Autosize
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="app-sidebar__heading">Charts</li>
+                            <li>
+                                <a href="charts-chartjs.html">
+                                    <i class="metismenu-icon pe-7s-graph2">
+                                    </i>ChartJS
+                                </a>
+                            </li>
+                            <li>
+                                <a href="charts-apexcharts.html">
+                                    <i class="metismenu-icon pe-7s-graph">
+                                    </i>Apex Charts
+                                </a>
+                            </li>
+                            <li>
+                                <a href="charts-sparklines.html">
+                                    <i class="metismenu-icon pe-7s-graph1">
+                                    </i>Chart Sparklines
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Ending of menu bars and starting within content-->
+            <!--//////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+            <div class="app-main__outer">
+                <div class="app-main__inner">
+                    <div class="jumbotron" style="padding-bottom: 5px;padding-right: 5px;padding-left: 5px;margin-top: 4px;margin-bottom: 20px;padding-top: 5px;">
+                        <h1 style="color:#e67300">Employes</h1>
+                    </div>
+
+                    <!--Employes Goes Here Below//////////////////-->
+
+                    <span> <button class="mb-2 mr-2 btn-icon btn-pill btn btn-warning" data-toggle="modal" data-target="#EImodal"><i class="fa fa-plus btn-icon-wrapper" style="font-size:13px;color:white"> </i>Add Employ</button></span>
+
+                    <div class="row" style="margin-left: 70px;">
+
+                        @for (int i = 0; i < 25; i++)
+                        {
+                            <div class="card" style="width:200px;height:200px;text-align:center;margin-right: 5px;margin-left: 10px;margin-bottom: 10px;">
+                                <div class="card-body">
+
+                                    <div class="dropdown">
+                                        <a href="#" class="dropdown" data-toggle="dropdown" aria-expanded="false"> <i class="fa fa-bars" style="text-align:right;padding-left: 145px;color: #669999"></i></a>
+
+                                        <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute;transform: translate3d(-19px, 15px, 0px);top: 0px;left: 0px;min-width: 12rem;will-change: transform;">
+                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#EImodal"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#EDmodal"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                        </div>
+
+                                    </div>
+
+
+                                    <img class="card-img-top" src="~/Content/css/Images/Man.jpg" alt="Card image" style="width:50%;border-radius: 10%">
+                                    <h4 class="card-title"><span> John Doe</span></h4>
+                                    <p class="card-text"><span> Software Engineer</span></p>
+
+                                </div>
+                            </div>
+                        }
+
+
+                    </div>
+
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="app-drawer-overlay d-none animated fadeIn"></div>
+
+    <script src="~/Scripts/JS/main.87c0748b313a1dda75f5.js"></script>
+</body>
+
+<!-- Mirrored from demo.dashboardpack.com/architectui-html-pro/components-modals.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 Nov 2019 05:58:48 GMT -->
+</html>
+
+
+
+<!-- Modal Long-->
+
+
+<div class="modal fade" id="EImodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Employes</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="col-form-label">First Name <span class="text-danger">*</span></label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="col-form-label">Last Name</label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="col-form-label">Username <span class="text-danger">*</span></label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="col-form-label">Email <span class="text-danger">*</span></label>
+                                <input class="form-control" type="email">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="col-form-label">Password</label>
+                                <input class="form-control" type="password">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="col-form-label">Confirm Password</label>
+                                <input class="form-control" type="password">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="col-form-label">Employee ID <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="col-form-label">Joining Date <span class="text-danger">*</span></label>
+                                <div class="cal-icon">
+                                    <input class="form-control datetimepicker" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="col-form-label">Phone </label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="sel1" class="col-form-label">Department</label>
+                                <select class="form-control" id="sel1">
+                                    <option disabled selected>Select Option</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="sel1" class="col-form-label">Designation</label>
+                                <select class="form-control" id="sel1">
+                                    <option disabled selected>Select Option</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </form>
+
+                <div class="table-responsive m-t-15">
+                    <table class="table table-striped custom-table">
+                        <thead>
+                            <tr>
+                                <th>Module Permission</th>
+                                <th class="text-center">Read</th>
+                                <th class="text-center">Write</th>
+                                <th class="text-center">Create</th>
+                                <th class="text-center">Delete</th>
+                                <th class="text-center">Import</th>
+                                <th class="text-center">Export</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Holidays</td>
+                                <td class="text-center">
+                                    <input checked="" type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input type="checkbox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Leaves</td>
+                                <td class="text-center">
+                                    <input checked="" type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input checked="" type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input checked="" type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input type="checkbox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Clients</td>
+                                <td class="text-center">
+                                    <input checked="" type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input checked="" type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input checked="" type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input type="checkbox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Projects</td>
+                                <td class="text-center">
+                                    <input checked="" type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input type="checkbox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tasks</td>
+                                <td class="text-center">
+                                    <input checked="" type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input checked="" type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input checked="" type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input checked="" type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input type="checkbox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Chats</td>
+                                <td class="text-center">
+                                    <input checked="" type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input checked="" type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input checked="" type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input checked="" type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input type="checkbox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Assets</td>
+                                <td class="text-center">
+                                    <input checked="" type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input checked="" type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input checked="" type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input checked="" type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input type="checkbox">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Timing Sheets</td>
+                                <td class="text-center">
+                                    <input checked="" type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input checked="" type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input checked="" type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input checked="" type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text-center">
+                                    <input type="checkbox">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Long div end-->
+<!--Modal Short-->
+
+<div class="modal fade bd-example-modal-sm" id="EDmodal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Remove?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" style="text-align:center">
+                <p>Do You Want To remove this Employ?</p>
+                <span>
+                    <button class="mb-2 mr-2 btn-pill btn-hover-shine btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button class="mb-2 mr-2 btn-pill btn-hover-shine btn btn-warning" data-dismiss="modal">Remove</button>
+                </span>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal Short End-->
+<!-- Scap Folded Code Below !!  ////////////////////////////////////////////////////////////////////////////////////-->
+
+@*<div>
+            <h4>Employe</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Name)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Age)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Age)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.CNIC)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.CNIC)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.DateOfBirth)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.DateOfBirth)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Email)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Email)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Address)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Address)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.PhoneNo)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.PhoneNo)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Landline)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Landline)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.JoiningDate)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.JoiningDate)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.TerminationDate)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.TerminationDate)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Picture)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Picture)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Attendence.Time)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Attendence.Time)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.AttendenceRecord.Time)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.AttendenceRecord.Time)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Department.Name)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Department.Name)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Designation.Name)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Designation.Name)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.User.Email)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.User.Email)
+                </dd>
+
+            </dl>
+        </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+*@

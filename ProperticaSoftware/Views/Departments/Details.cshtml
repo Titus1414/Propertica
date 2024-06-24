@@ -1,0 +1,150 @@
+﻿@model ProperticaSoftware.Models.Department
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+
+
+<div>
+    <div class="container" style="padding-left: 0px;">
+        <button class="mb-2 mr-2 btn-icon btn-pill btn btn-warning" style="float: right; margin-top: 40px;" data-toggle="modal" data-target="#PModal"><i class="fa fa-plus btn-icon-wrapper" style="font-size:13px;color:white;"> </i>Add Department</button>
+        <h1 style="color:#ffbb33">Departments</h1>
+        <h5>@DateTime.Now.ToString("MMMM-yyyy") </h5>
+    </div>
+
+
+    @*Table Starts Here*@
+
+    <div class="main-card mb-3 card">
+        <div class="card-body">
+            <table data-toggle="table">
+                <thead>
+                    <tr>
+                        <th data-sortable="true">
+                            Id
+                        </th>
+                        <th data-sortable="true">
+                           Department Name 
+                        </th>
+
+                        <th data-field="description"
+                            data-sortable="true">
+                            Description
+                        </th>
+
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @for (int i = 0; i <= 10; i++)
+                    {
+                        <tr>
+                            <td>@i</td>
+                            <td>Department Name</td>
+                            <td>This is some description about the saly paid to the Department</td>
+
+                        </tr>
+                    }
+
+
+                </tbody>
+                @*Table Ends Here*@
+
+
+            </table>
+            <h4>Entries: 11</h4>
+        </div>
+    </div>
+
+
+    @*Modal For Purchase*@
+
+    <div class="modal fade" id="PModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style=" margin-top: 75px;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">New Department</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="col-form-label">Department Name <span class="text-danger">*</span></label>
+                                    <input class="form-control" type="text">
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="col-form-label">Description</label>
+                                    <input class="form-control" type="text">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </form>
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*Scap folded files for  Department*@
+@*<div>
+        <h4>Department</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.IsActive)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.IsActive)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>*@

@@ -1,0 +1,249 @@
+﻿@model IEnumerable<ProperticaSoftware.Models.PartialClasses>
+@{
+
+    Layout = null;
+
+    DateTime utcTime = DateTime.UtcNow;
+    TimeZoneInfo myZone = TimeZoneInfo.FindSystemTimeZoneById("Pakistan Standard Time");
+    DateTime custDateTime = TimeZoneInfo.ConvertTimeFromUtc(utcTime, myZone);
+
+    //var dt = custDateTime.Day;
+
+    int sno = 1;
+
+}
+<style>
+
+    .custom-control-label::before {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .custom-control-label::after {
+        width: 2rem;
+        height: 2rem;
+    }
+</style>
+
+<div class="container-fluid" id="mydiv">
+
+
+    <h1 style="color:#D7AF70">Attendenc Record</h1>
+    <h4 id="Dat">@ViewBag.RealDate</h4>
+    @*<h4 style="color:#937D64" id="dates"> @ViewBag.RealDate</h4>*@
+    <input type="hidden" id="dtVal" value="@ViewBag.RealDate" />
+
+    <div class="row container" style="background-color:white;margin-bottom:15px;padding-left: 15px;margin-left:0">
+        <div class="col-lg-2" style="padding-left:0">
+
+            <button class="mb-2 mr-2 btn-square btn-transition btn btn-outline-dark Nday" style="font-size:medium;margin-top: 8px;"> <i class="fa fa-long-arrow-alt-left btn-icon-wrapper"></i></button>
+            <button class="mb-2 mr-2 btn-square btn-transition btn btn-outline-dark Pday" style="font-size:medium;margin-top: 8px;">  <i class="fa fa-long-arrow-alt-right btn-icon-wrapper"></i> </button>
+
+        </div>
+        <div class="col-lg-3" style="margin-top:8px">
+            <div class="row">
+
+                <div class="col-lg-4" style="padding-right: 0px;padding-left: 0px;padding-top: 10px;">
+                    <label>Pick Date:</label>
+                </div>
+                <div class="col-lg-8" style="padding-left:0">
+                    <input type="text" class="form-control" data-toggle="datepicker">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <a href='@Url.Action("Main", "Home")'>
+
+        <input type='button' class="btn-lg btn-secondary" value='Monthly Record' />
+    </a>
+    <br /><br />
+    <div class="main-card mb-3 card">
+        <div class="card-body" style="padding-top: 0px;padding-left: 0px;padding-right:0px">
+
+            <div class="table-responsive">
+                <table class="mb-3 table">
+                    <thead class="thead-dark">
+                        <tr style="background-color:black;color:white">
+                            <th>Sr #</th>
+                            <th>Name</th>
+                            <th>Department</th>
+                            <th>Designation</th>
+                            <th>Time</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (var atn in ViewBag.AttendecRcrd)
+                        {
+                            <tr>
+
+
+                                <td>@(sno++)</td>
+                                <td>@atn.name</td>
+                                <td>@atn.Dname</td>
+                                <td>@atn.Dsname</td>
+                                <td>@atn.time</td>
+                                <td>
+                                    @if (@atn.status == "Present")
+                                    {
+                                        <i><img src="~/Images/Attnd/WhatsApp Image 2019-11-19 at 00.01.26 (1).jpeg" /></i>
+                                    }
+                                    else if (@atn.status == "Absent")
+                                    {
+                                        <i><img src="~/Images/Attnd/WhatsApp Image 2019-11-19 at 00.01.26 (3).jpeg" /></i>
+                                    }
+                                    else if (@atn.status == "Leave")
+                                    {
+                                        <i><img src="~/Images/Attnd/WhatsApp Image 2019-11-19 at 00.01.26 (5).jpeg" /></i>
+                                    }
+                                    else if (@atn.status == "Half Day")
+                                    {
+                                        <i><img src="~/Images/Attnd/WhatsApp Image 2019-11-19 at 00.01.26 (4).jpeg" /></i>
+                                    }
+                                    else if (@atn.status == "Late")
+                                    {
+                                        <i><img src="~/Images/Attnd/WhatsApp Image 2019-11-19 at 00.01.26 (2).jpeg" /></i>
+                                    }
+                                    else if (@atn.status == "")
+                                    {
+                                        <i><img src="~/Images/Attnd/image (1).png" /></i>
+                                    }
+                                    else
+                                    {
+                                        <div style="font-size:small" class="custom-control custom-checkbox">
+                                            @if (atn.time == null)
+                                            {
+                                                <input type="checkbox" class="custom-control-input checked" size="3" id=@atn.EmpID />
+                                                <label class="custom-control-label" for=@atn.EmpID />
+                                            }
+                                            else
+                                            {
+                                                <input type="checkbox" class="custom-control-input" size="3" id=@atn.EmpID checked disabled />
+                                                <label class="custom-control-label" for=@atn.EmpID />
+                                            }
+                                        </div>
+                                    }
+                                </td>
+
+
+                                @*<td style="padding-left:25px">
+                                        <div style="font-size:small" class="custom-control custom-checkbox">
+                                            @if (atn.time == null)
+                                            {
+                                                <input type="checkbox" class="custom-control-input checked" size="3" id=@atn.EmpID />
+                                                <label class="custom-control-label" for=@atn.EmpID />
+                                            }
+                                            else
+                                            {
+                                                <input type="checkbox" class="custom-control-input" size="3" id=@atn.EmpID checked disabled />
+                                                <label class="custom-control-label" for=@atn.EmpID />
+                                            }
+                                        </div>
+                                    </td>*@
+
+                            </tr>
+
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+
+<script>
+
+    $(document).ready(function () {
+        $(".Nday").unbind().click(function() {
+            debugger
+        var i = new Date(document.getElementById("Dat").innerHTML).valueOf() - 86400000;
+        dataI = new Date(i);
+        document.getElementById("Dat").innerHTML = dataI.toDateString();
+        var c = dataI.toDateString();
+
+           
+                $.post('@Url.Action("previousDay", "Home")', { day: c }, function (data) {
+                    
+                    if (data.length == 0) {
+                        $('#tdy').remove();
+                    } else {
+                        $("#mydiv").html(data);
+                    }
+                }
+                );
+                
+        })
+
+        $(".Pday").unbind().click(function() {
+            
+            
+            var i = new Date(document.getElementById("Dat").innerHTML).valueOf() + 86400000;
+        dataI = new Date(i);
+        document.getElementById("Dat").innerHTML = dataI.toDateString();
+        var c = dataI.toDateString();
+
+           
+                $.post('@Url.Action("previousDay", "Home")', { day: c }, function (data) {
+                    
+                    if (data.length == 0) {
+                        $('#tdy').remove();
+                    } else {
+                        $("#mydiv").html(data);
+                    }
+                }
+                );
+        })
+
+    });
+
+</script>
+
+
+
+
+
+
+@*<script language="javascript">
+    debugger
+    //document.getElementById("but").onclick = function () {
+    //    var i = new Date(document.getElementById("Dat").innerHTML).valueOf() + 86400000;
+
+    //    dataI = new Date(i);
+
+    //    document.getElementById("Dat").innerHTML = dataI.toDateString();
+    //    var b = dataI.toDateString();
+       
+
+    //}
+    document.getElementById("but").onclick = function () {
+
+        var i = new Date(document.getElementById("Dat").innerHTML).valueOf() - 86400000;
+        dataI = new Date(i);
+        document.getElementById("Dat").innerHTML = dataI.toDateString();
+        var c = dataI.toDateString();
+        
+    }
+
+    var dataI = new Date();
+
+    if (document.getElementById("Dat").innerHTML == '') {
+        document.getElementById("Dat").innerHTML = dataI.toDateString();
+    }
+
+
+    
+
+</script>*@
+
+
